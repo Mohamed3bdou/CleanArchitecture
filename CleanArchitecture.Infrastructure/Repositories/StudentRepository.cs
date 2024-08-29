@@ -29,7 +29,7 @@ namespace CleanArchitecture.Infrastructure.Repositories
                     Phone = s.Phone,
                     Department = new Department
                     {
-                        DepartmentId = s.DepartmentId,
+                        DepartmentId = s.Department.DepartmentId,
                         Name = s.Department.Name
                     }
                 }).ToListAsync();

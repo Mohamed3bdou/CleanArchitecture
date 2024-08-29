@@ -17,7 +17,8 @@ namespace CleanArchitecture.Service.Implementations
         #region GET 
         public async Task<List<Student>> GetStudentsListAsync()
         {
-            return await _studentRepository.GetStudentsListAsync();
+            var students = await _studentRepository.GetStudentsListAsync();
+            return students;
         }
         #endregion
     }
